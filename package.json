@@ -1,0 +1,30 @@
+{
+  "name": "m-lib",
+  "version": "1.0.0",
+  "description": "NodeJS Express MongoDB MVC Rest",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcgzn/m-lib.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gcgzn/m-lib/issues"
+  },
+  "homepage": "https://github.com/gcgzn/m-lib#readme",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "mongoose": "^5.7.5"
+  }
+}
