@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
         searchOp.name = new RegExp(req.query.name, 'i')// i means "case insensetive" baboş
     }
     try{
-        const authors = await Author.find({})
+        const authors = await Author.find(searchOp)
         res.render('authors/index', { 
         authors: authors,
         searchOp: req.query 
@@ -31,6 +31,7 @@ router.post('/', async (req, res) => {
     })
     try{
         const newAuthor = await author.save()
+        res.redirect(`authors`)
     } catch {
         res.render('authors/new', {
             author: author,
